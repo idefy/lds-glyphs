@@ -1,0 +1,142 @@
+ /* 
+   *  Generated file, do not alter manualy !
+   */
+
+@font-face {
+  	font-family:'LDS glyphs';
+  	src: url('lds-glyphs.eot');
+  	src: url('lds-glyphs.eot?#iefix') format('embedded-opentype'),
+	     url('lds-glyphs.woff2') format('woff2'),
+  		 url('lds-glyphs.woff') format('woff'),
+  		 url('lds-glyphs.ttf') format('truetype');
+  	font-weight: normal;
+  	font-style: normal;
+  }
+  .ldsg {
+  	font-family:'LDS glyphs';
+  }
+  .ldsg:before{
+	vertical-align: -0.15em;
+  }
+  
+  .ldsg-moroni-statue:before{
+	content: '\e001';
+  }
+  
+  .ldsg-young-women-torch:before{
+	content: '\e002';
+  }
+  
+  .ldsg-hymns:before{
+	content: '\e003';
+  }
+  
+  .ldsg-slc-temple:before{
+	content: '\e004';
+  }
+  
+  .ldsg-church:before{
+	content: '\e005';
+  }
+  
+  .ldsg-family-search:before{
+	content: '\e006';
+  }
+  
+  .ldsg-mormon-channel:before{
+	content: '\e007';
+  }
+  
+  .ldsg-scripture-mastery:before{
+	content: '\e008';
+  }
+  
+  .ldsg-ctr:before{
+	content: '\e009';
+  }
+  
+  .ldsg-christus:before{
+	content: '\e010';
+  }
+  
+  .ldsg-scout:before{
+	content: '\e011';
+  }
+  
+  .ldsg-youth:before{
+	content: '\e012';
+  }
+  
+  .ldsg-music-note:before{
+	content: '\e013';
+  }
+  
+  .ldsg-scriptures:before{
+	content: '\e014';
+  }
+  
+  .ldsg-and-it-came-to-pass:before{
+	content: '\e015';
+  }
+  
+  .ldsg-act-well-thy-part:before{
+	content: '\e016';
+  }
+  
+  .ldsg-familly-tree:before{
+	content: '\e017';
+  }
+  
+  .ldsg-handshake:before{
+	content: '\e018';
+  }
+  
+  .ldsg-fan-chart:before{
+	content: '\e019';
+  }
+  
+  .ldsg-indexing:before{
+	content: '\e020';
+  }
+  
+  .ldsg-family-history:before{
+	content: '\e021';
+  }
+  
+  .ldsg-baptism:before{
+	content: '\e022';
+  }
+  
+  .ldsg-blessing:before{
+	content: '\e023';
+  }
+  
+  .ldsg-aaronic-priesthood:before{
+	content: '\e024';
+  }
+  
+  .ldsg-melchizedek-priesthood:before{
+	content: '\e025';
+  }
+  
+  .ldsg-hold-rod:before{
+	content: '\e026';
+  }
+  
+  .ldsg-olive-fruit:before{
+	content: '\e027';
+  }
+  
+  .ldsg-gold-plates:before{
+	content: '\e028';
+  }
+  
+  .ldsg-beehive:before{
+	content: '\e029';
+  }
+  
+  .ldsg-tithing:before{
+	content: '\e030';
+  }
+  
+ 

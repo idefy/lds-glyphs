@@ -1,0 +1,67 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../glyphs/lds-glyphs.css"></link>
+	<style>
+	#glyphBox {
+		text-align:center; 
+	}
+	#glyphBox li {
+		display: box;
+		width:14.28%;
+		padding:5px;
+		margin: 10px;
+		background-color:#EEE;
+		float: left;
+		height:100pt;
+		font-size: 48pt;
+	}
+	#glyphBox li div{
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+	#glyphBox li span {
+		font-family:"Lucida Console", Monaco, monospace;
+		font-size:8pt;
+	}
+	.tiny {
+		font-size: 8pt;
+		color: gray;
+	}
+	</style>
+	<script>
+	function overed(elem){
+		elem.style.backgroundColor = document.getElementById('bgcolor').value;
+		elem.style.color = document.getElementById('ftcolor').value;
+		elem.getElementsByTagName('DIV')[0].style.fontSize = document.getElementById('ftsize').value + 'pt';
+	}
+	function released(elem) {
+		elem.style.backgroundColor = '#eee';
+		elem.style.color = 'black';
+		elem.getElementsByTagName('DIV')[0].style.fontSize = '48pt';
+	}
+	</script>
+</head>
+<body>
+<h1>Glyph preview</h1>
+<b>Hover effect: </b> 
+		Background:<input type="color" name="bgcolor" id="bgcolor" value="#660066"/>
+		-&amp;- Font:<input type="color" name="ftcolor" id="ftcolor" value="#ffffff"/>
+		-&amp;- Size:<input type="number" name="ftsize" id="ftsize" min="6" max="256" value="52"/>
+<span class="tiny">best used with a fully compliant HTML5 browser</span>
+<span class="tiny">To align glyph on the font baseline, in the case you place it next to a text, add glyphtxt class.</span>
+{% for d in svg.defs %}{% for f in d.font %}
+{%- set fontfaces = f['font-face'] -%}
+{%- set fontface = fontfaces[0] -%}
+{%- set fontfamily = fontface.$['font-family'] -%}
+	<h2>{{f.$.id}} - {{fontfamily}}</h2>
+	<ul id="glyphBox">
+	{% for g in f.glyph %}{% if g.$.d %}
+		<li onmouseover="overed(this)" onmouseout="released(this)">
+		<div class="ldsg {{g.$['glyph-name']}}"></div>
+		<span>ldsg {{g.$['glyph-name']}}</span>
+		</li>
+	{% endif %}{% endfor %}
+  </ul>
+{% endfor %}{% endfor %}
+</body>
+</html>
