@@ -1,0 +1,25 @@
+{
+  "name": "lds-glyphs",
+  "version": "1.0.0",
+  "homepage": "https://github.com/idefy/lds-glyphs",
+  "authors": [
+    "Igor DeFaye <idefaye@gmail.com>"
+  ],
+  "description": "LDS free glyphs resources",
+  "main": "gulp.js",
+  "keywords": [
+    "LDS",
+    "SUR",
+    "SDJ",
+    "Glyph",
+    "Icon"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
