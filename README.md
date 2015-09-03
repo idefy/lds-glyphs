@@ -25,7 +25,10 @@ Just add the fonts and the css file found in dist/glyphs directory.
 If this glyph library becomes popular enough, then I hope to upgrade it to a CDN. But for now there is none.
 
 ## Getting involved
+A list of things to add is maintained [here](todo.md).
+
 If you want to get involved and help this glyph library grow, then you can fork and create pull requests on this library.
+
 Optionnaly, if you are not familiar with how GIT works, you can just send me a SVG file containing the glyphs you think should be added or modified.
 
 ### How to add/modify a SVG font
@@ -58,3 +61,5 @@ Or to just package the font:
 
 Serve and glyph will create the different font formats, the css and the sample.html file for you.
 
+## Changelog
+The detailed changelog can be viewed [here](changelog.md)
