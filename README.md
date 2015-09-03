@@ -1,4 +1,4 @@
-# LSD glyphs 1.0 
+# LSD glyphs 1.1 
 
 This is an open set of glyphs for LDS users who may use them freely. The basic icons have been redrawn and new ones are being added slowly. 
 Anyone with talents in glyphs is welcome to submit suggestion or replacement to current glyphs.

@@ -35,7 +35,7 @@
 	content: '\e004';
   }
   
-  .ldsg-church:before{
+  .ldsg-stake-center:before{
 	content: '\e005';
   }
   
@@ -137,6 +137,54 @@
   
   .ldsg-tithing:before{
 	content: '\e030';
+  }
+  
+  .ldsg-clb:before{
+	content: '\e031';
+  }
+  
+  .ldsg-hlj:before{
+	content: '\e032';
+  }
+  
+  .ldsg-duty-to-god:before{
+	content: '\e033';
+  }
+  
+  .ldsg-yw-personal-program:before{
+	content: '\e034';
+  }
+  
+  .ldsg-buytv:before{
+	content: '\e035';
+  }
+  
+  .ldsg-missionaries:before{
+	content: '\e036';
+  }
+  
+  .ldsg-missionary:before{
+	content: '\e037';
+  }
+  
+  .ldsg-meeting-house:before{
+	content: '\e038';
+  }
+  
+  .ldsg-temple:before{
+	content: '\e039';
+  }
+  
+  .ldsg-relief-society-simple:before{
+	content: '\e040';
+  }
+  
+  .ldsg-relief-society:before{
+	content: '\e041';
+  }
+  
+  .ldsg-relief-society-full:before{
+	content: '\e042';
   }
   
  
