@@ -9,6 +9,9 @@ Anyone with talents in glyphs is welcome to submit suggestion or replacement to 
 ## Preview
 You can see a preview of the glyphs [here](https://rawgit.com/idefy/lds-glyphs/master/dist/sample/sample.html) to preview what it looks like.
 
+## Install
+`bower install lds-glyphs`
+
 ## Usage
 Just add the fonts and the css file found in dist/glyphs directory.
 

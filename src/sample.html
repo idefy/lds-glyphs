@@ -1,7 +1,21 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../glyphs/lds-glyphs.css"></link>
+	
+	<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
 	<style>
+	h1, h2 {
+		text-align:center;
+		font-family: 'Roboto Slab', serif;
+	}
+	#intro {
+		padding-left:50px;
+		font-family: 'Questrial', sans-serif;
+	}
+	input[type="number"] {
+		text-align:right;
+	}
 	#glyphBox {
 		text-align:center; 
 	}
@@ -42,18 +56,21 @@
 	</script>
 </head>
 <body>
-<h1>Glyph preview</h1>
-<b>Hover effect: </b> 
-		Background:<input type="color" name="bgcolor" id="bgcolor" value="#660066"/>
-		-&amp;- Font:<input type="color" name="ftcolor" id="ftcolor" value="#ffffff"/>
-		-&amp;- Size:<input type="number" name="ftsize" id="ftsize" min="6" max="256" value="52"/>
-<span class="tiny">best used with a fully compliant HTML5 browser</span>
-<span class="tiny">To align glyph on the font baseline, in the case you place it next to a text, add glyphtxt class.</span>
 {% for d in svg.defs %}{% for f in d.font %}
 {%- set fontfaces = f['font-face'] -%}
 {%- set fontface = fontfaces[0] -%}
 {%- set fontfamily = fontface.$['font-family'] -%}
-	<h2>{{f.$.id}} - {{fontfamily}}</h2>
+<h1>{{fontfamily}} preview</h1>
+<div id="intro">
+<b>Hover effect: </b> 
+		Background:&nbsp;<input type="color" name="bgcolor" id="bgcolor" value="#660066"/>
+		-&amp;- Font:&nbsp;<input type="color" name="ftcolor" id="ftcolor" value="#ffffff"/>
+		-&amp;- Size:&nbsp;<input type="number" name="ftsize" id="ftsize" min="6" max="256" value="52"/>
+<span class="tiny">these options are best used with a fully compliant HTML5 browser.</span>
+<!--span class="tiny">To align glyph on the font baseline, in the case you place it next to a text, add glyphtxt class.</span-->
+</div>
+
+	<h2>{{f.$.id}}</h2>
 	<ul id="glyphBox">
 	{% for g in f.glyph %}{% if g.$.d %}
 		<li onmouseover="overed(this)" onmouseout="released(this)">
