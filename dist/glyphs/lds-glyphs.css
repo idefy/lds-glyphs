@@ -187,4 +187,12 @@
 	content: '\e042';
   }
   
+  .ldsg-sister-missionary:before{
+	content: '\e043';
+  }
+  
+  .ldsg-sisters-missionaries:before{
+	content: '\e044';
+  }
+  
  
