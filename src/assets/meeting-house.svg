@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="1000"
+   height="1000"
+   viewBox="0 0 999.99999 999.99999"
+   id="svg7631"
+   version="1.1">
+  <defs
+     id="defs7633">
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <pattern
+       id="EMFhbasepattern-8"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <pattern
+       id="EMFhbasepattern-3"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <pattern
+       id="EMFhbasepattern-6"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <metadata
+     id="metadata7636">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="rect3012-3"
+     d="m 502.85645,156.53905 -41.3125,256.2226 0,116.4649 -200.8457,105.916 0,208.3184 478.6035,0 -1.3184,-212.2735 -196.0117,-102.4004 0,-116.0254 z m -14.0645,275.998 26.3691,0 0,58.8926 -26.3691,0 z m 10.6504,200.8262 c 0.5491,0 1.1016,0 1.6562,0.021 13.8052,0.4613 29.4444,8.1021 47.4649,25.9297 l 0,163.4902 -94.9297,0 0,-163.4902 c 14.3918,-14.8896 28.786,-25.8224 45.8086,-25.9512 z"
+     style="fill:#000000;fill-rule:evenodd;stroke:none" />
+</svg>

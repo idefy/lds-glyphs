@@ -1,4 +1,4 @@
-# LSD glyphs 
+# LSD glyphs 1.1 
 
 This is an open set of glyphs for LDS users who may use them freely. The basic icons have been redrawn and new ones are being added slowly. 
 Anyone with talents in glyphs is welcome to submit suggestion or replacement to current glyphs.
@@ -39,17 +39,12 @@ You will [inkscape](https://inkscape.org/) to manipulates svg font files.
 
 #### Basic tutorial
 Not the best tutorial, but covers all the basics : [youtube video here](https://www.youtube.com/watch?v=_KX-e6sijGE)
-It uses Fontello to build fonts from SVG files, so I recommend reading how to create valid SVG files [here](https://github.com/fontello/fontello/wiki/How-to-use-custom-images#importing-svg-images) 
 
 #### SVG file convention
 - Modify the font with Inkscape. 
-- Saved it as simple SVG format.
-- Name all glyph with a descriptive name, all lowercased and with dashes for spaces. The name is what defines the css name, so choose wisely.
+- Name all glyph with a descriptive name and prefixed with ldsg- . All lowercased and with dashes for spaces.
+Do not add new caracters because they follow UTF the glyphs standards and I want to keep it that way. Use any of the numbered glyphs, eg. ldsg-e102. This is what defines the css name, so choose wisely.
 
-#### Creating a new glyph
-- Use the svg template found in src/template/_template.svg
-- Make a copy into the src/assets/ directory and rename it as desired (following rules mentionned above)
-- Saved it as simple SVG format.
 
 ### Testing it localy
 Provided that you've installed nodejs, run :

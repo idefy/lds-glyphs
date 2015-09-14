@@ -1,6 +1,11 @@
 # Introduction
 Version changes are noted for all icon related changes. Tools and generators are ignored from the changelog for now.
 
+## v1.1.1
+- Changed the font generating system
+- Placed each glyph in a separated file, easier for maintenance and merging.
+- Minor correction on some glyphs.
+
 ## v1.1.0
 
 - Added new CTR glyphs for french (CLB) and spanish (HLJ) icons.

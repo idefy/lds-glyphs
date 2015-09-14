@@ -29,85 +29,11 @@ var envenv = $.util.env;
 gulp.task('help', $.taskListing);
 gulp.task('default', ['help']);
 
-/////////////// GLYPHS /////////////////////////
-
-gulp.task('glyph', ['glyph_font','glyph_html', 'glyph_css']);
-
-/**
- * Generates glyphs
- * TODO: generated the css based on the SVG file
- * revision NOT hashed
- */
-gulp.task('glyph_font', function(cb){
-	log('Creating LDS glyphs fonts');
-	return gulp
-	.src(config.glyphs + config.svg)
-	.pipe($.plumber())
-	.pipe($.svg2ttf())
-	.pipe(gulp.dest(config.build))
-	.pipe($.mirror(
-		$.ttf2eot(),
-		$.ttf2woff(),
-		$.ttf2woff2()
-	))
-	.pipe(gulp.dest(config.build));
-	if (cb) cb(null);
-
-});
-
-/**
- * Generates css for glyphs
- * TODO: generated the css based on the SVG file
- * revision NOT hashed
- */
-gulp.task('glyph_css', ['glyph_json'], function(cb){
-	log('Creating css glyphs file');
-	return gulp
-	.src(config.css)
-	.pipe($.data(getJsonData))
-	.pipe($.swig({defaults: { cache: false }}))
-	.pipe($.rename({extname:'.css'}))
-	.pipe(gulp.dest(config.build));
-	if (cb) cb(null);
-
-});
-
-/**
- * Generates HTML sample for glyphs
- * TODO: generated the css based on the SVG file
- * revision NOT hashed
- */
-gulp.task('glyph_html',['glyph_json'], function(cb){
-	log('Creating sample html glyphs file');
-	log(config.html);
-	log(config.sample);
-	return gulp
-	.src(config.html)
-	.pipe($.data(getJsonData))
-	.pipe($.swig({defaults: { cache: false }}))
-	.pipe(gulp.dest(config.sample));
-	if (cb) cb(null);
-
-});
-
-/**
- * Obtains glyphs json data file glyphs
- */
-gulp.task('glyph_json', function(cb){
-	log('Creating json data for sample & css file');
-	return gulp
-	.src(config.glyphs + config.svg)
-	.pipe($.rename({extname:'.xml'}))
-	.pipe($.xml2json())
-	.pipe($.rename({extname:'.json'}))
-	.pipe(gulp.dest(config.temp));
-	if (cb) cb(null);
-
-});
+/////////////// TASKS /////////////////////////
 
 gulp.task('serve', ['glyph'], function() {
 	browserSync.init({
-		startPath: './sample/sample.html',
+		startPath: './sample.html',
         server: {
 			baseDir: config.dist,
 			routes: {
@@ -118,7 +44,39 @@ gulp.task('serve', ['glyph'], function() {
     });
 	
 	gulp.watch(config.glyphs + '**/*.*', ['glyph']);
-	gulp.watch(config.dist + 'sample/sample.html' ).on('change', browserSync.reload); //'**/*.*'
+	gulp.watch(config.dist + 'sample.html' ).on('change', browserSync.reload); //'**/*.*'
+});
+
+gulp.task('glyph', function(){
+	return gulp.src(['src/assets/*.svg'])
+	  .pipe($.iconfont({
+		  fontName:'LDS glyphs',
+		  fileName:'lds-glyphs',
+          appendUnicode: false,
+          formats: ['ttf', 'eot', 'woff', 'svg', 'woff2']
+	  }))
+	  .on('glyphs', function(glyphs, options){
+		  log('Generating glyphs\' css');
+		  gulp.src('src/templates/lds-glyphs.css')
+		    .pipe($.consolidate('lodash', {
+				glyphs: glyphs,
+				fontName: 'LDS glyphs',
+				fileName: 'lds-glyphs',
+				fontPath: '',
+				className: 'ldsg'
+			}))
+			.pipe(gulp.dest('dist/glyphs/'));
+		  log('Generating HTML');
+		   gulp.src('src/templates/sample.html')
+		    .pipe($.consolidate('lodash', {
+				glyphs: glyphs,
+				fontName: 'LDS glyphs',
+				fileName: 'lds-glyphs',
+				className: 'ldsg'
+			}))
+			.pipe(gulp.dest('dist/'));
+	  })
+	  .pipe(gulp.dest('dist/glyphs/'));
 });
 
 /**
@@ -132,10 +90,6 @@ gulp.task('clean', function() {
 });
 
 /////////////// functions /////////////////////////
-
-var getJsonData = function(file) {
-  return require(config.jsonData);
-};
 
 /**
  * Log a message or series of messages using chalk's blue color.
@@ -175,25 +129,6 @@ function notify(options) {
 function clean(path, done) {
     log('Cleaning: ' + $.util.colors.blue(path));
     del(path, done);
-}
-
-/**
- * Loops on folders
- */
-function getFolders(dir) {
-    return fs.readdirSync(dir)
-      .filter(function(file) {
-        return fs.statSync(path.join(dir, file)).isDirectory();
-      });
-}
-
-function buildDetails() {
-	var min = config.minify ? $.util.colors.bgYellow(true) : $.util.colors.yellow(false);
-	var rev = config.hashRev ? $.util.colors.bgYellow(true) : $.util.colors.yellow(false);
-	var build = config.isProd ? $.util.colors.bgYellow('Production') : $.util.colors.yellow('Development');
-	$.util.log($.util.colors.yellow('Building for:    '), build);
-	$.util.log($.util.colors.yellow('Minify libraries:'), min);
-	$.util.log($.util.colors.yellow('Hash Revision:   '), rev);
 }
 
 module.exports = gulp;
