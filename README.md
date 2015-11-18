@@ -7,7 +7,7 @@ Anyone with talents in glyphs is welcome to submit suggestion or replacement to 
 > These glyphs are designed to be used by the web. They are all packaged and ready to be used.
 
 ## Preview
-You can see a preview of the glyphs [here](https://rawgit.com/idefy/lds-glyphs/master/dist/sample/sample.html) to preview what it looks like.
+You can see a preview of the glyphs [here](https://rawgit.com/idefy/lds-glyphs/master/dist/sample.html) to preview what it looks like.
 
 ## Install
 `bower install lds-glyphs`
