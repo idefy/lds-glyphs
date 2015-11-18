@@ -8,6 +8,7 @@ Version changes are noted for all icon related changes. Tools and generators are
 - added noah's ark
 - added the ten commandements
 - added the title of liberty
+- added lds mobile icon
 
 ## v1.2.1, 1.2.2, 1.2.3
 - minor fixes on generated outputs and readme file
