@@ -1,6 +1,22 @@
 # Introduction
 Version changes are noted for all icon related changes. Tools and generators are ignored from the changelog for now.
 
+# v1.3.0
+- added 2 Mormon Helping Hands icon
+- added a Liahona icon
+- added the ark of the convenant
+- added noah's ark
+- added the ten commandements
+- added the title of liberty
+
+## v1.2.1, 1.2.2, 1.2.3
+- minor fixes on generated outputs and readme file
+
+## v1.2.0
+- added the flower icon representing young women virtues
+- added the bee charm that is part of the young women program achievements
+- added the ETTE (endure til the end) icon
+
 ## v1.1.3
 - Changed the font generating system
 - Placed each glyph in a separated file, easier for maintenance and merging.
