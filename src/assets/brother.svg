@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   viewBox="0 0 999.99999 999.99999"
+   id="svg7631"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="member.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="0.236"
+     inkscape:cx="500"
+     inkscape:cy="500"
+     inkscape:window-x="3832"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7631" />
+  <defs
+     id="defs7633">
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <pattern
+       id="EMFhbasepattern-8"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <pattern
+       id="EMFhbasepattern-3"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <pattern
+       id="EMFhbasepattern-6"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <metadata
+     id="metadata7636">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path4801-7"
+     d="m 164.77385,841.91607 c 3.052,30.5321 3.0479,30.5308 33.5798,38.1545 46.332,11.5683 134.6923,26.379 189.3015,31.7276 0,0 172.3642,12.559 257.1543,-0.02 46.703,-4.529 147.5628,-20.4265 177.8827,-28.0363 3.8659,-0.7034 12.534,-2.5619 12.534,-2.5619 l -0.8827,-85.0633 c -1.1723,0 -3.8737,-26.5844 -6.0143,-59.0753 -3.315,-50.5254 -6.2528,-62.499 -20.2874,-82.7513 -33.2148,-47.9296 -120.7454,-103.4604 -165.2077,-104.8112 -21.421,-0.651 -22.3282,0.2236 -29.684,28.598 -7.7288,29.818 -53.229,146.5879 -63.4756,162.9065 -2.6971,4.2944 -7.8572,10.707 -13.8368,16.3616 l -0.5504,-68.5361 c -1.5474,-22.3651 -19.5188,-39.6916 -41.172,-39.6913 -21.6369,0.022 -39.588,17.3423 -41.1333,39.6913 l -3.0458,71.7416 c -11.2537,-6.2839 -29.3188,-45.8001 -59.7672,-123.2033 -39.3575,-100.0534 -38.7928,-99.6077 -97.5895,-76.3765 -31.5143,14.8097 -64.8118,46.949 -80.6239,67.2919 -43.6839,56.2008 -28.7359,118.5678 -47.1817,213.6535 z M 465.78315,82.627571 c -42.1343,-0.1856 -72.5521,15.7825 -104.1502,50.063999 -29.9081,32.4467 -35.1945,48.0364 -34.6052,102.0238 0.7665,70.0914 13.6043,78.6057 30.5645,20.2678 11.535,-39.678 16.0141,-42.3167 50.9476,-29.9917 45.1435,15.9271 92.0361,12.4634 121.6466,-8.9871 40.8498,-29.5918 60.6418,-20.7177 85.9973,38.5566 16.9011,39.5107 24.8948,31.4136 24.8541,-25.1775 -0.062,-87.1221 -13.37,-107.6373 -83.9689,-129.442899 -36.5033,-11.2747 -66.0057,-17.2009 -91.2858,-17.313 z m -12.8215,497.428299 c 1.5468,34.8897 19.5202,61.9184 41.1739,61.9182 21.6373,-0.036 39.5857,-27.0549 41.1314,-61.9182 z"
+     style="fill:#000000"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccccsscccccccscsccccssssssccccc" />
+</svg>

@@ -1,11 +1,12 @@
 {
   "name": "lds-glyphs",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "lds glyphs icons",
   "main": "gulp.config.js",
   "scripts": {
     "serve": "gulp serve",
-    "dist": "gulp glyph"
+    "dist": "gulp glyph",
+	"bump": "gulp bump"
   },
   "author": "Igor DeFaye",
   "repository": {

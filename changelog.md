@@ -1,6 +1,11 @@
 # Introduction
 Version changes are noted for all icon related changes. Tools and generators are ignored from the changelog for now.
 
+# v1.6.4
+- added several icons
+- changed some icons so they look nicer
+- improved glyph generation and HTML display
+
 # v1.3.0
 - added 2 Mormon Helping Hands icon
 - added a Liahona icon
